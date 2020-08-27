@@ -6,4 +6,10 @@
 //  Copyright © 2020 KodingKita. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct DeviceUtils {
+    static func isIpad() -> Bool {
+        return UIDevice.current.userInterfaceIdiom == .pad
+    }
+}

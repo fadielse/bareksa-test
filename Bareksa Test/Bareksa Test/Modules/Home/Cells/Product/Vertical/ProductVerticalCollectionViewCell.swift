@@ -10,9 +10,15 @@ import UIKit
 
 class ProductVerticalCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var viewContent: UIView!
+    @IBOutlet weak var labelProductName: UILabel!
+    @IBOutlet weak var buttonDetail: UIButton!
+    @IBOutlet weak var labelProductDescription: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        viewContent.layer.setBorders()
+        viewContent.layer.setRadius()
     }
 
 }

@@ -3,13 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF3A273B24F74E0C0086D8DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A273A24F74E0C0086D8DB /* BaseViewController.swift */; };
 		FF4904B024F60CE60082535B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4904AD24F60CE60082535B /* Home.storyboard */; };
 		FF4904B124F60CE60082535B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4904AE24F60CE60082535B /* HomePresenter.swift */; };
 		FF4904B224F60CE60082535B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4904AF24F60CE60082535B /* HomeViewController.swift */; };
+		FF995E0424F7501B00B89E59 /* HomeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF995E0324F7501B00B89E59 /* HomeTableDataSource.swift */; };
+		FF995E0724F7516E00B89E59 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF995E0524F7516E00B89E59 /* ProductTableViewCell.swift */; };
+		FF995E0824F7516E00B89E59 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF995E0624F7516E00B89E59 /* ProductTableViewCell.xib */; };
+		FF995E0A24F7595900B89E59 /* ProductCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF995E0924F7595900B89E59 /* ProductCollectionDataSource.swift */; };
 		FF9D6DB424F6103E0082924A /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D6DB224F6103E0082924A /* BalanceTableViewCell.swift */; };
 		FF9D6DB524F6103E0082924A /* BalanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9D6DB324F6103E0082924A /* BalanceTableViewCell.xib */; };
 		FF9D6DCF24F64AE00082924A /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF9D6DBC24F64AE00082924A /* Montserrat-LightItalic.ttf */; };
@@ -37,12 +42,16 @@
 		FF9D6DF724F6548E0082924A /* ProductHorizontalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9D6DF524F6548E0082924A /* ProductHorizontalCollectionViewCell.xib */; };
 		FF9D6DFA24F654A10082924A /* ProductVerticalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D6DF824F654A10082924A /* ProductVerticalCollectionViewCell.swift */; };
 		FF9D6DFB24F654A10082924A /* ProductVerticalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9D6DF924F654A10082924A /* ProductVerticalCollectionViewCell.xib */; };
+		FFA4CE1D24F76763002481F0 /* IntrinsicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4CE1C24F76763002481F0 /* IntrinsicCollectionView.swift */; };
+		FFA4CE2024F78E92002481F0 /* CALayer+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4CE1F24F78E92002481F0 /* CALayer+Style.swift */; };
+		FFA4CE2324F79DEB002481F0 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4CE2224F79DEB002481F0 /* DeviceUtils.swift */; };
 		FFA73E4224F42BE7001B9545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA73E4124F42BE7001B9545 /* AppDelegate.swift */; };
 		FFA73E4424F42BE7001B9545 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA73E4324F42BE7001B9545 /* SceneDelegate.swift */; };
 		FFA73E4B24F42BE8001B9545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA73E4A24F42BE8001B9545 /* Assets.xcassets */; };
 		FFA73E4E24F42BE8001B9545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA73E4C24F42BE8001B9545 /* LaunchScreen.storyboard */; };
 		FFA73E5924F42BE9001B9545 /* Bareksa_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA73E5824F42BE9001B9545 /* Bareksa_TestTests.swift */; };
 		FFA73E6424F42BE9001B9545 /* Bareksa_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA73E6324F42BE9001B9545 /* Bareksa_TestUITests.swift */; };
+		FFDD93D024F74D2C00C5D0EC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FFDD93CF24F74D2C00C5D0EC /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,9 +72,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF3A273A24F74E0C0086D8DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FF4904AD24F60CE60082535B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FF4904AE24F60CE60082535B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		FF4904AF24F60CE60082535B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF995E0324F7501B00B89E59 /* HomeTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableDataSource.swift; sourceTree = "<group>"; };
+		FF995E0524F7516E00B89E59 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		FF995E0624F7516E00B89E59 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		FF995E0924F7595900B89E59 /* ProductCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionDataSource.swift; sourceTree = "<group>"; };
 		FF9D6DB224F6103E0082924A /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
 		FF9D6DB324F6103E0082924A /* BalanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTableViewCell.xib; sourceTree = "<group>"; };
 		FF9D6DBC24F64AE00082924A /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -93,6 +107,9 @@
 		FF9D6DF524F6548E0082924A /* ProductHorizontalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductHorizontalCollectionViewCell.xib; sourceTree = "<group>"; };
 		FF9D6DF824F654A10082924A /* ProductVerticalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVerticalCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF9D6DF924F654A10082924A /* ProductVerticalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductVerticalCollectionViewCell.xib; sourceTree = "<group>"; };
+		FFA4CE1C24F76763002481F0 /* IntrinsicCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicCollectionView.swift; sourceTree = "<group>"; };
+		FFA4CE1F24F78E92002481F0 /* CALayer+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Style.swift"; sourceTree = "<group>"; };
+		FFA4CE2224F79DEB002481F0 /* DeviceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
 		FFA73E3E24F42BE7001B9545 /* Bareksa Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bareksa Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA73E4124F42BE7001B9545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFA73E4324F42BE7001B9545 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFDD93D024F74D2C00C5D0EC /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +153,7 @@
 		FF4904AB24F60C670082535B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FF3A273A24F74E0C0086D8DB /* BaseViewController.swift */,
 				FF4904B324F60CEA0082535B /* Home */,
 			);
 			path = Modules;
@@ -156,6 +175,7 @@
 				FF4904AD24F60CE60082535B /* Home.storyboard */,
 				FF4904AE24F60CE60082535B /* HomePresenter.swift */,
 				FF4904AF24F60CE60082535B /* HomeViewController.swift */,
+				FF995E0324F7501B00B89E59 /* HomeTableDataSource.swift */,
 				FF4904B424F60E700082535B /* Cells */,
 			);
 			path = Home;
@@ -183,6 +203,9 @@
 		FF9D6DB724F6104D0082924A /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				FF995E0524F7516E00B89E59 /* ProductTableViewCell.swift */,
+				FF995E0624F7516E00B89E59 /* ProductTableViewCell.xib */,
+				FF995E0924F7595900B89E59 /* ProductCollectionDataSource.swift */,
 				FF9D6DEB24F654120082924A /* Horizontal */,
 				FF9D6DEA24F654010082924A /* Vertical */,
 			);
@@ -258,6 +281,30 @@
 			path = Horizontal;
 			sourceTree = "<group>";
 		};
+		FFA4CE1A24F7673D002481F0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4CE1C24F76763002481F0 /* IntrinsicCollectionView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FFA4CE1E24F78E6D002481F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4CE1F24F78E92002481F0 /* CALayer+Style.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFA4CE2124F79DCF002481F0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4CE2224F79DEB002481F0 /* DeviceUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		FFA73E3524F42BE7001B9545 = {
 			isa = PBXGroup;
 			children = (
@@ -283,9 +330,12 @@
 			children = (
 				FFA73E4124F42BE7001B9545 /* AppDelegate.swift */,
 				FFA73E4324F42BE7001B9545 /* SceneDelegate.swift */,
+				FFA4CE1E24F78E6D002481F0 /* Extensions */,
+				FFA4CE1A24F7673D002481F0 /* Library */,
 				FF4904AB24F60C670082535B /* Modules */,
 				FF9D6DB924F64AC10082924A /* Resources */,
 				FF4904AC24F60C850082535B /* SupportFIles */,
+				FFA4CE2124F79DCF002481F0 /* Utilities */,
 			);
 			path = "Bareksa Test";
 			sourceTree = "<group>";
@@ -324,6 +374,9 @@
 			dependencies = (
 			);
 			name = "Bareksa Test";
+			packageProductDependencies = (
+				FFDD93CF24F74D2C00C5D0EC /* SwiftyJSON */,
+			);
 			productName = "Bareksa Test";
 			productReference = FFA73E3E24F42BE7001B9545 /* Bareksa Test.app */;
 			productType = "com.apple.product-type.application";
@@ -396,6 +449,9 @@
 				Base,
 			);
 			mainGroup = FFA73E3524F42BE7001B9545;
+			packageReferences = (
+				FFDD93CE24F74D2C00C5D0EC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = FFA73E3F24F42BE7001B9545 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -419,6 +475,7 @@
 				FF9D6DD124F64AE00082924A /* Montserrat-BoldItalic.ttf in Resources */,
 				FFA73E4E24F42BE8001B9545 /* LaunchScreen.storyboard in Resources */,
 				FF9D6DDF24F64AE00082924A /* Montserrat-Italic.ttf in Resources */,
+				FF995E0824F7516E00B89E59 /* ProductTableViewCell.xib in Resources */,
 				FF9D6DE124F64AE00082924A /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				FF9D6DB524F6103E0082924A /* BalanceTableViewCell.xib in Resources */,
 				FF9D6DD224F64AE00082924A /* Montserrat-Light.ttf in Resources */,
@@ -463,10 +520,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4904B124F60CE60082535B /* HomePresenter.swift in Sources */,
+				FFA4CE2324F79DEB002481F0 /* DeviceUtils.swift in Sources */,
 				FFA73E4224F42BE7001B9545 /* AppDelegate.swift in Sources */,
 				FF9D6DE424F653E00082924A /* NewsTableViewCell.swift in Sources */,
+				FFA4CE2024F78E92002481F0 /* CALayer+Style.swift in Sources */,
 				FF9D6DF624F6548E0082924A /* ProductHorizontalCollectionViewCell.swift in Sources */,
+				FF995E0A24F7595900B89E59 /* ProductCollectionDataSource.swift in Sources */,
 				FF9D6DFA24F654A10082924A /* ProductVerticalCollectionViewCell.swift in Sources */,
+				FF3A273B24F74E0C0086D8DB /* BaseViewController.swift in Sources */,
+				FF995E0424F7501B00B89E59 /* HomeTableDataSource.swift in Sources */,
+				FF995E0724F7516E00B89E59 /* ProductTableViewCell.swift in Sources */,
+				FFA4CE1D24F76763002481F0 /* IntrinsicCollectionView.swift in Sources */,
 				FF9D6DB424F6103E0082924A /* BalanceTableViewCell.swift in Sources */,
 				FFA73E4424F42BE7001B9545 /* SceneDelegate.swift in Sources */,
 				FF4904B224F60CE60082535B /* HomeViewController.swift in Sources */,
@@ -636,7 +700,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4A72M4SRA;
-				INFOPLIST_FILE = "Bareksa Test/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Bareksa Test/SupportFIles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,7 +719,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4A72M4SRA;
-				INFOPLIST_FILE = "Bareksa Test/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Bareksa Test/SupportFIles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -790,6 +856,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FFDD93CE24F74D2C00C5D0EC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FFDD93CF24F74D2C00C5D0EC /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFDD93CE24F74D2C00C5D0EC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFA73E3624F42BE7001B9545 /* Project object */;
 }
