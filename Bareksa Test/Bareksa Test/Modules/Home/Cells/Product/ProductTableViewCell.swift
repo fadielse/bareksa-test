@@ -17,7 +17,7 @@ class ProductTableViewCell: UITableViewCell {
     let sectionInset: CGFloat = 16.0
     let cellSpacing: CGFloat = 8.0
     let cellHorizontalHeight: CGFloat = 156.0
-    let cellVerticalHeight: CGFloat = 270.0
+    let cellVerticalHeight: CGFloat = 290.0
     let collectionDataSource = ProductCollectionDataSource()
     
     override func awakeFromNib() {

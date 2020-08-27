@@ -10,8 +10,17 @@ import UIKit
 
 class NewsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imageNews: UIImageView!
+    @IBOutlet weak var labelNewsTitle: UILabel!
+    @IBOutlet weak var labelNewsDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
+        setupView()
+    }
+    
+    func setupView() {
+        imageNews?.layer.setRadius()
     }
 }

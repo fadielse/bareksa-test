@@ -86,6 +86,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageNews" destination="RiB-6g-OJa" id="Rxd-IB-gCw"/>
+                <outlet property="labelNewsDate" destination="FQk-jC-Ido" id="XIr-XS-LKu"/>
+                <outlet property="labelNewsTitle" destination="Caw-9e-GK0" id="zo0-oX-bro"/>
+            </connections>
             <point key="canvasLocation" x="-151" y="-13"/>
         </tableViewCell>
     </objects>

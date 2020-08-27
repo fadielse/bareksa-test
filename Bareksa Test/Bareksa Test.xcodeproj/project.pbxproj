@@ -45,6 +45,9 @@
 		FFA4CE1D24F76763002481F0 /* IntrinsicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4CE1C24F76763002481F0 /* IntrinsicCollectionView.swift */; };
 		FFA4CE2024F78E92002481F0 /* CALayer+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4CE1F24F78E92002481F0 /* CALayer+Style.swift */; };
 		FFA4CE2324F79DEB002481F0 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4CE2224F79DEB002481F0 /* DeviceUtils.swift */; };
+		FFA4CE2624F7EB3F002481F0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4CE2524F7EB3F002481F0 /* Home.swift */; };
+		FFA4CE2824F7EB76002481F0 /* HomeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4CE2724F7EB76002481F0 /* HomeDAO.swift */; };
+		FFA4CE2B24F7EB98002481F0 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4CE2A24F7EB98002481F0 /* BaseDAO.swift */; };
 		FFA73E4224F42BE7001B9545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA73E4124F42BE7001B9545 /* AppDelegate.swift */; };
 		FFA73E4424F42BE7001B9545 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA73E4324F42BE7001B9545 /* SceneDelegate.swift */; };
 		FFA73E4B24F42BE8001B9545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA73E4A24F42BE8001B9545 /* Assets.xcassets */; };
@@ -110,6 +113,9 @@
 		FFA4CE1C24F76763002481F0 /* IntrinsicCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicCollectionView.swift; sourceTree = "<group>"; };
 		FFA4CE1F24F78E92002481F0 /* CALayer+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Style.swift"; sourceTree = "<group>"; };
 		FFA4CE2224F79DEB002481F0 /* DeviceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
+		FFA4CE2524F7EB3F002481F0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FFA4CE2724F7EB76002481F0 /* HomeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDAO.swift; sourceTree = "<group>"; };
+		FFA4CE2A24F7EB98002481F0 /* BaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
 		FFA73E3E24F42BE7001B9545 /* Bareksa Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bareksa Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA73E4124F42BE7001B9545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFA73E4324F42BE7001B9545 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -305,6 +311,24 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		FFA4CE2424F7EB15002481F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4CE2A24F7EB98002481F0 /* BaseDAO.swift */,
+				FFA4CE2924F7EB7A002481F0 /* Home */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFA4CE2924F7EB7A002481F0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4CE2524F7EB3F002481F0 /* Home.swift */,
+				FFA4CE2724F7EB76002481F0 /* HomeDAO.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		FFA73E3524F42BE7001B9545 = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +356,7 @@
 				FFA73E4324F42BE7001B9545 /* SceneDelegate.swift */,
 				FFA4CE1E24F78E6D002481F0 /* Extensions */,
 				FFA4CE1A24F7673D002481F0 /* Library */,
+				FFA4CE2424F7EB15002481F0 /* Models */,
 				FF4904AB24F60C670082535B /* Modules */,
 				FF9D6DB924F64AC10082924A /* Resources */,
 				FF4904AC24F60C850082535B /* SupportFIles */,
@@ -533,7 +558,10 @@
 				FFA4CE1D24F76763002481F0 /* IntrinsicCollectionView.swift in Sources */,
 				FF9D6DB424F6103E0082924A /* BalanceTableViewCell.swift in Sources */,
 				FFA73E4424F42BE7001B9545 /* SceneDelegate.swift in Sources */,
+				FFA4CE2624F7EB3F002481F0 /* Home.swift in Sources */,
+				FFA4CE2824F7EB76002481F0 /* HomeDAO.swift in Sources */,
 				FF4904B224F60CE60082535B /* HomeViewController.swift in Sources */,
+				FFA4CE2B24F7EB98002481F0 /* BaseDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
