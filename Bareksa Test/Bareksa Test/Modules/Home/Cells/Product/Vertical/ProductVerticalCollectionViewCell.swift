@@ -6,7 +6,6 @@
 //  Copyright © 2020 KodingKita. All rights reserved.
 //
 
-import SDWebImageSVGCoder
 import UIKit
 
 class ProductVerticalCollectionViewCell: UICollectionViewCell {

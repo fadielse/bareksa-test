@@ -6,17 +6,12 @@
 //  Copyright © 2020 KodingKita. All rights reserved.
 //
 
-import SDWebImageSVGCoder
 import UIKit
 
 class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // set svg support
-        let SVGCoder = SDImageSVGCoder.shared
-        SDImageCodersManager.shared.addCoder(SVGCoder)
     }
     
     func showAlert(message: String) {
