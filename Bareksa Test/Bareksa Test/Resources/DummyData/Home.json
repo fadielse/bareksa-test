@@ -1,0 +1,56 @@
+{
+  "success": "true",
+  "code": "200",
+  "message": "Success get data",
+  "data": {
+    "account": {
+      "balance_amount": 110551476,
+      "benefit_amount": 531476,
+      "benefit_percentage": 0.52
+    },
+    "investment_categories": [
+      {
+        "name": "Reksa Dana",
+        "desc": "Pilihan investasi bagi pemula dengan modal terjangkau",
+        "image": "https://images.bareksa.com/bareksa/img/illustrations/illustration_reksadana_4.svg"
+      },
+      {
+        "name": "SBN",
+        "desc": "Investasi bantu negara yang 100% dijamin aman",
+        "image": "https://images.bareksa.com/bareksa/img/illustrations/illustration_SBN_3.svg"
+      },
+      {
+        "name": "Emas",
+        "desc": "Miliki emas, investasi tenang tanpa cemas",
+        "image": "https://images.bareksa.com/bareksa/img/illustrations/illustration_gold_4.svg"
+      }
+    ],
+    "news": [
+      {
+        "title": "BATAVIA PAM : PRODUK ALTERNATIF INVESTASI BISA JADI PELUANG SAAT PANDEMI",
+        "release_date": "28 Agustus 2020 | 21:30:27",
+        "image": "https://media.bareksa.com/cms/media/assets/image/2020/06/15881_ilustrasi-sejumlah-investor-analis-pasar-modal-sed_299_168_c.jpg"
+      },
+      {
+        "title": "KISAH TASYA KAMILA RASAKAN MANFAAT DARI PENERBITAN SUKUK RITEL SR013",
+        "release_date": "28 Agustus 2020 | 15:23:44",
+        "image": "https://media.bareksa.com/cms/media/assets/image/2020/08/15999_tasya-kamila--public-figure-penerima-beasiswa-lpdp_299_168_c.jpg"
+      },
+      {
+        "title": "TREN PEMULIHAN BERLANJUT, BEGINI KINERJA REKSADANA SYARIAH SEPANJANG AGUSTUS",
+        "release_date": "28 Agustus 2020 | 15:06:25",
+        "image": "https://media.bareksa.com/cms/media/assets/image/2018/04/13728_ilustrasi-wanita-muslim-berhijab-sedang-menghitung_299_168_c.jpg"
+      },
+      {
+        "title": "DJPPR KEMENKEU: TARGET PENJUALAN SUKUK RITEL SR013 RP5 TRILIUN, MASIH BISA NAIK",
+        "release_date": "28 Agustus 2020 | 11:26:14",
+        "image": "https://media.bareksa.com/cms/media/assets/image/2020/08/15998_sukuk-ritel-sr013_299_168_c.jpg"
+      },
+      {
+        "title": "PENAWARAN SR013 RESMI DIBUKA, BELI DI BAREKSA BISA RAIH HADIAH EMAS RP500 RIBU",
+        "release_date": "28 Agustus 2020 | 08:59:08",
+        "image": "https://media.bareksa.com/cms/media/assets/image/2020/08/15996_ketua-dewan-komisioner-otoritas-jasa-keuangan--ojk_299_168_c.jpg"
+      }
+    ]
+  }
+}

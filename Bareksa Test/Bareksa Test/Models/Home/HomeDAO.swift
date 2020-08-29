@@ -10,13 +10,13 @@ import Foundation
 import SwiftyJSON
 
 class HomeDAO: BaseDAO {
-    // TODO: Declare data members
+    var home: Home?
     
     override init(json: JSON?) {
         super.init(json: json)
         guard let json = json else {
             return
         }
-        // TODO: Parse Json to data member
+        self.home = Home(json: json["data"])
     }
 }

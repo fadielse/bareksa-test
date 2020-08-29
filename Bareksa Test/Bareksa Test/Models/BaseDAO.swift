@@ -10,5 +10,19 @@ import Foundation
 import SwiftyJSON
 
 class BaseDAO {
-    init(json: JSON? = nil) { }
+    var success: Bool = false
+    var code: Int?
+    var message: String?
+    
+    init(json: JSON? = nil) {
+        if let json = json {
+            self.success = json["success"].boolValue
+            self.code = json["code"].int
+            self.message = json["message"].string
+        }
+    }
+    
+    func getMessage() -> String {
+        return message ?? ""
+    }
 }

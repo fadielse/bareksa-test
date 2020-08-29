@@ -6,6 +6,7 @@
 //  Copyright © 2020 KodingKita. All rights reserved.
 //
 
+import SDWebImage
 import UIKit
 
 class NewsTableViewCell: UITableViewCell {
@@ -13,6 +14,12 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var imageNews: UIImageView!
     @IBOutlet weak var labelNewsTitle: UILabel!
     @IBOutlet weak var labelNewsDate: UILabel!
+    
+    var data: Home.News? {
+        didSet {
+            updateView()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +29,11 @@ class NewsTableViewCell: UITableViewCell {
     
     func setupView() {
         imageNews?.layer.setRadius()
+    }
+    
+    func updateView() {
+        imageNews.sd_setImage(with: URL(string: data?.image ?? ""), completed: nil)
+        labelNewsTitle.text = data?.title
+        labelNewsDate.text = data?.releaseDate
     }
 }

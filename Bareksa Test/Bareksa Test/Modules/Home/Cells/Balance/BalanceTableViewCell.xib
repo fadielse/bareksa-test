@@ -10,6 +10,9 @@
         <array key="Montserrat-Regular.ttf">
             <string>Montserrat-Regular</string>
         </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -170,13 +173,13 @@
                                                                         <rect key="frame" x="0.0" y="25" width="67.5" height="50"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,52%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzn-B6-5qL">
-                                                                                <rect key="frame" x="22" y="0.0" width="45.5" height="50"/>
-                                                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                                                <rect key="frame" x="20.5" y="0.0" width="47" height="50"/>
+                                                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                                                                 <color key="textColor" red="0.027949999999999999" green="0.019939999999999999" blue="0.01208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_upward" translatesAutoresizingMaskIntoConstraints="NO" id="kUI-dO-Mf9">
-                                                                                <rect key="frame" x="-2" y="15" width="16" height="20"/>
+                                                                                <rect key="frame" x="-3.5" y="15" width="16" height="20"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="20" id="u4j-SA-jUi"/>
                                                                                 </constraints>
@@ -234,6 +237,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelBalance" destination="h8j-yA-kd8" id="7gg-1a-hTU"/>
+                <outlet property="labelBenefit" destination="Tl0-rP-4Qz" id="VGi-LY-giV"/>
+                <outlet property="labelBenefitPercentage" destination="hzn-B6-5qL" id="X9O-71-KGT"/>
+            </connections>
             <point key="canvasLocation" x="140.57971014492756" y="196.875"/>
         </tableViewCell>
     </objects>

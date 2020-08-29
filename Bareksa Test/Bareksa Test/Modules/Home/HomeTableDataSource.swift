@@ -9,6 +9,8 @@
 import UIKit
 
 class HomeTableDataSource: NSObject, UITableViewDataSource {
+    var data: Home?
+    
     enum HomeSection {
         case balance
         case product
@@ -28,7 +30,7 @@ class HomeTableDataSource: NSObject, UITableViewDataSource {
         case .product:
             return 1
         case .news:
-            return 5
+            return data?.newsList.count ?? 0
         }
     }
     
@@ -36,14 +38,22 @@ class HomeTableDataSource: NSObject, UITableViewDataSource {
         switch sections[indexPath.section] {
         case .balance:
             let cell = tableView.dequeueReusableCell(withIdentifier: "BalanceTableViewCell", for: indexPath) as! BalanceTableViewCell
+            if let account = data?.account {
+                cell.data = account
+            }
             return cell
         case .product:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as! ProductTableViewCell
+            if let investmentCategories = data?.investmentCategories {
+                cell.data = investmentCategories
+            }
             cell.collectionWidth = tableView.bounds.width
-            cell.updateView()
             return cell
         case .news:
             let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as! NewsTableViewCell
+            if let data = data, data.newsList.indices.contains(indexPath.row) {
+                cell.data = data.newsList[indexPath.row]
+            }
             return cell
         }
     }

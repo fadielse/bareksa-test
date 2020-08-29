@@ -54,7 +54,16 @@ extension HomeViewController: HomeView {
         tableView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsTableViewCell")
         tableView.register(UINib(nibName: "ProductTableViewCell", bundle: nil), forCellReuseIdentifier: "ProductTableViewCell")
         tableView.delegate = self
+    }
+    
+    func getHomeDataSuccess() {
+        dataSource.data = presenter.getHomeResult()
         tableView.dataSource = dataSource
+        tableView.reloadData()
+    }
+    
+    func getHomeDataFailed(withMessage message: String) {
+        showAlert(message: message)
     }
 }
 

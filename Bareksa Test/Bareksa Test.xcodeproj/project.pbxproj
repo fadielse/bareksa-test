@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2AB67824FACD2A005920E7 /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = FF2AB67724FACD2A005920E7 /* Home.json */; };
+		FF2AB67A24FAD100005920E7 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AB67924FAD100005920E7 /* JsonLoader.swift */; };
 		FF3A273B24F74E0C0086D8DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A273A24F74E0C0086D8DB /* BaseViewController.swift */; };
 		FF4904B024F60CE60082535B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4904AD24F60CE60082535B /* Home.storyboard */; };
 		FF4904B124F60CE60082535B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4904AE24F60CE60082535B /* HomePresenter.swift */; };
 		FF4904B224F60CE60082535B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4904AF24F60CE60082535B /* HomeViewController.swift */; };
+		FF8AB93D24FAD9F3002AF9A2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FF8AB93C24FAD9F3002AF9A2 /* SDWebImage */; };
+		FF8AB94024FAE38D002AF9A2 /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = FF8AB93F24FAE38D002AF9A2 /* SDWebImageSVGCoder */; };
+		FF8AB94224FAE527002AF9A2 /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AB94124FAE527002AF9A2 /* UIFont+Custom.swift */; };
+		FF8AB94424FAE950002AF9A2 /* NSNumber+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AB94324FAE950002AF9A2 /* NSNumber+Format.swift */; };
 		FF995E0424F7501B00B89E59 /* HomeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF995E0324F7501B00B89E59 /* HomeTableDataSource.swift */; };
 		FF995E0724F7516E00B89E59 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF995E0524F7516E00B89E59 /* ProductTableViewCell.swift */; };
 		FF995E0824F7516E00B89E59 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF995E0624F7516E00B89E59 /* ProductTableViewCell.xib */; };
@@ -75,10 +81,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF2AB67724FACD2A005920E7 /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
+		FF2AB67924FAD100005920E7 /* JsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
 		FF3A273A24F74E0C0086D8DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FF4904AD24F60CE60082535B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FF4904AE24F60CE60082535B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		FF4904AF24F60CE60082535B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF8AB94124FAE527002AF9A2 /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+		FF8AB94324FAE950002AF9A2 /* NSNumber+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+Format.swift"; sourceTree = "<group>"; };
 		FF995E0324F7501B00B89E59 /* HomeTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableDataSource.swift; sourceTree = "<group>"; };
 		FF995E0524F7516E00B89E59 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		FF995E0624F7516E00B89E59 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
@@ -135,6 +145,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8AB94024FAE38D002AF9A2 /* SDWebImageSVGCoder in Frameworks */,
+				FF8AB93D24FAD9F3002AF9A2 /* SDWebImage in Frameworks */,
 				FFDD93D024F74D2C00C5D0EC /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +168,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF2AB67624FACD10005920E7 /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AB67724FACD2A005920E7 /* Home.json */,
+			);
+			path = DummyData;
+			sourceTree = "<group>";
+		};
 		FF4904AB24F60C670082535B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +250,7 @@
 		FF9D6DB924F64AC10082924A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FF2AB67624FACD10005920E7 /* DummyData */,
 				FF9D6DBA24F64AD50082924A /* Font */,
 			);
 			path = Resources;
@@ -299,6 +320,8 @@
 			isa = PBXGroup;
 			children = (
 				FFA4CE1F24F78E92002481F0 /* CALayer+Style.swift */,
+				FF8AB94124FAE527002AF9A2 /* UIFont+Custom.swift */,
+				FF8AB94324FAE950002AF9A2 /* NSNumber+Format.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -307,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				FFA4CE2224F79DEB002481F0 /* DeviceUtils.swift */,
+				FF2AB67924FAD100005920E7 /* JsonLoader.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -401,6 +425,8 @@
 			name = "Bareksa Test";
 			packageProductDependencies = (
 				FFDD93CF24F74D2C00C5D0EC /* SwiftyJSON */,
+				FF8AB93C24FAD9F3002AF9A2 /* SDWebImage */,
+				FF8AB93F24FAE38D002AF9A2 /* SDWebImageSVGCoder */,
 			);
 			productName = "Bareksa Test";
 			productReference = FFA73E3E24F42BE7001B9545 /* Bareksa Test.app */;
@@ -476,6 +502,8 @@
 			mainGroup = FFA73E3524F42BE7001B9545;
 			packageReferences = (
 				FFDD93CE24F74D2C00C5D0EC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				FF8AB93B24FAD9F3002AF9A2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				FF8AB93E24FAE38D002AF9A2 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
 			);
 			productRefGroup = FFA73E3F24F42BE7001B9545 /* Products */;
 			projectDirPath = "";
@@ -515,6 +543,7 @@
 				FF9D6DF724F6548E0082924A /* ProductHorizontalCollectionViewCell.xib in Resources */,
 				FF9D6DDC24F64AE00082924A /* OFL.txt in Resources */,
 				FF9D6DD524F64AE00082924A /* Montserrat-Thin.ttf in Resources */,
+				FF2AB67824FACD2A005920E7 /* Home.json in Resources */,
 				FF9D6DD624F64AE00082924A /* Montserrat-Bold.ttf in Resources */,
 				FF9D6DD024F64AE00082924A /* Montserrat-Medium.ttf in Resources */,
 				FFA73E4B24F42BE8001B9545 /* Assets.xcassets in Resources */,
@@ -557,8 +586,11 @@
 				FF995E0724F7516E00B89E59 /* ProductTableViewCell.swift in Sources */,
 				FFA4CE1D24F76763002481F0 /* IntrinsicCollectionView.swift in Sources */,
 				FF9D6DB424F6103E0082924A /* BalanceTableViewCell.swift in Sources */,
+				FF8AB94224FAE527002AF9A2 /* UIFont+Custom.swift in Sources */,
 				FFA73E4424F42BE7001B9545 /* SceneDelegate.swift in Sources */,
 				FFA4CE2624F7EB3F002481F0 /* Home.swift in Sources */,
+				FF2AB67A24FAD100005920E7 /* JsonLoader.swift in Sources */,
+				FF8AB94424FAE950002AF9A2 /* NSNumber+Format.swift in Sources */,
 				FFA4CE2824F7EB76002481F0 /* HomeDAO.swift in Sources */,
 				FF4904B224F60CE60082535B /* HomeViewController.swift in Sources */,
 				FFA4CE2B24F7EB98002481F0 /* BaseDAO.swift in Sources */,
@@ -886,6 +918,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FF8AB93B24FAD9F3002AF9A2 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		FF8AB93E24FAE38D002AF9A2 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.2;
+			};
+		};
 		FFDD93CE24F74D2C00C5D0EC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
@@ -897,6 +945,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FF8AB93C24FAD9F3002AF9A2 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF8AB93B24FAD9F3002AF9A2 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		FF8AB93F24FAE38D002AF9A2 /* SDWebImageSVGCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF8AB93E24FAE38D002AF9A2 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
+			productName = SDWebImageSVGCoder;
+		};
 		FFDD93CF24F74D2C00C5D0EC /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FFDD93CE24F74D2C00C5D0EC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
